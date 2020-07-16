@@ -9,12 +9,12 @@ export class Search extends Component {
     searchUsers: PropTypes.func.isRequired,
     clearUsers: PropTypes.func.isRequired,
     showClear: PropTypes.func.isRequired,
-    setAlerts: PropTypes.func.isRequired,
+    setAlert: PropTypes.func.isRequired,
   };
   onSubmit = (e) => {
     e.preventDefault();
     if (this.state.text === "") {
-      this.props.setAlert("please enter something", "light");
+      this.props.setAlert("For the love of God, enter something...", "light");
     } else {
       this.props.searchUsers(this.state.text);
       this.setState({ text: "" });
