@@ -1,3 +1,13 @@
 # Github Finder
 
-- React app to find GitHub users
+## Usage
+
+- ```bash
+  npm install
+  ```
+
+- ```bash
+  npm start
+  ```
+
+---
